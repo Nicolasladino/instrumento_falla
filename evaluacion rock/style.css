@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+header{
+    height: 120vh;
+    width: 100%;
+    background-image: url(images/gunsNroses.jpg);
+    background-size:cover;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+.sec1{
+    height: 22vh;
+    display: flex; 
+    background-color: rgb(7, 48, 109);
+}
+
+#text{
+    display: flex; 
+    color: white;
+    padding: 5px ;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}.cabecera{
+    height: 75vh;
+    background-image: url("/images/gunsNroses.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1em;
+   text-align: right;
+
+   
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.band-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.band {
+    background-color: #f7f7f7;
+    padding: 1em;
+    border: 0px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.band img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.band h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+}
+
+
+@media screen and (max-width:1060px){
+    .containers{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        height: auto;
+    }
+    .caja-2,.caja{
+        margin: 10px;
+    }
+    .containers > .caja:nth-child(2){
+        display: flex;
+        align-self: flex-start;
+    }
+    h1{
+        font-size: 40px;
+    }
+    footer{
+        width: 70%;
+    }
+}
+@media screen and (max-width:480px) {
+    h1{
+        font-size: 30px;
+    }
+    .containers{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
